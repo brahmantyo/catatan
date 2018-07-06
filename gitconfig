@@ -1,0 +1,11 @@
+[user]
+        email = webmaster@metalogic.co.id
+        name = webmaster
+[alias]
+        lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+        hist = log --all --graph --abbrev-commit --pretty=format:'%Cred%h%Creset %C(green)<%cr>%Creset %C(bold blue)%d%n%s %C(yellow)<by: %an>%n'
+        change = !sh -c 'git checkout $1 && cat .git_description' -
+        mkbranch = !"git checkout -b $1 && printf '# Branch Name:%s\n# Description:\n#  ' $1 > .git_description && vi .git_description && git add .git_description && git commit -m \"Add New Branch $1\" && echo $>/dev/null"
+[push]
+        default = simple
+
