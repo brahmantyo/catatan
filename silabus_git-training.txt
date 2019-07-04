@@ -1,0 +1,27 @@
+Training Git Metalogic:
+1. Basic Concept of Git
+   - repository
+   - stage
+   - commit
+   - pull,push & clone
+   - log
+   - diff
+   - branch
+   - merge
+2. Simple Case Example
+   - repository with 1 commit
+   - repository with more then 1 commit
+   - 
+3. Practice of Git
+   - repository
+   - stage
+   - commit
+   - pull,push & clone
+   - log
+   - diff
+   - branch:
+     * view branches list
+     * branch add
+     * branch checkout
+     * branch delete
+   - merge
