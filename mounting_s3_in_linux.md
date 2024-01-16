@@ -66,7 +66,7 @@ How to implement s3fs-fuse in Debian. We need prepare some informations and cred
 
     # or:
     # sudo echo ACCESS_KEY_ID:SECRET_ACCESS_KEY > /etc/passwd-s3fs
-    sudo echo 65TN7ZJBU3PGAU8CS01H:LQZ2Y8S5oh7PR7P8rezhwPCr39MVDh6YSfLU3A9P > /etc/passwd-s3fs
+    sudo su -c "echo 65TN7ZJBU3PGAU8CS01H:LQZ2Y8S5oh7PR7P8rezhwPCr39MVDh6YSfLU3A9P > /etc/passwd-s3fs"
     ```
 2. Create a file to save mounting instruction for auto mounting on reboot.
    ```sh
