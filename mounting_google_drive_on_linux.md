@@ -1,50 +1,49 @@
 ## A. INSTALLATION
 ### On Ubuntu
 1. Install ocamlfuse using the following command:
-```sh
-sudo add-apt-repository ppa:alessandro-strada/ppa
-sudo apt update && sudo apt install google-drive-ocamlfuse
-```
+   ```sh
+   sudo add-apt-repository ppa:alessandro-strada/ppa
+   sudo apt update && sudo apt install google-drive-ocamlfuse
+   ```
 3. Run ocamlfuse in the command line:
-```sh
-google-drive-ocamlfuse
-```
+   ```sh
+   google-drive-ocamlfuse
+   ```
 3. Authorize the ocamlfuse system to access files and folders on your google drive. A sign-in window will open in your browser automatically where the user needs to sign-in and provide required access.
-
 4. Make a new directory named ‘googledrive’ where the Google drive will be mounted
-```sh
-mkdir ~/googledrive
-```
+   ```sh
+   mkdir ~/googledrive
+   ```
 5. Mount the google drive on your Linux-based system by running the following command and you are done:
-```sh
-google-drive-ocamlfuse ~/googledrive
-```
+   ```sh
+   google-drive-ocamlfuse ~/googledrive
+   ```
 6. Unmounting of the FUSE system can be done in case one wishes to disconnect the google drive with local system, by running the following command:
-```sh
-fusermount -u ~/google-drive
-```
+   ```sh
+   fusermount -u ~/google-drive
+   ```
 
 ### On Debian
-There’s no official deb package for Debian. But we can easily compile it from source. First, install OPAM package manager.
-```sh
-sudo apt install opam
-```
-Then install build dependencies.
-```sh
-sudo apt install m4 libcurl4-gnutls-dev libfuse-dev libsqlite3-dev zlib1g-dev libncurses5-dev pkg-config
-```
-Initialize OPAM state.
-```sh
-opam init
-```
-Update the list of available packages.
-```sh
-opam update
-```
-Compile and install Google Drive Ocamlfuse.
-```sh
-opam install google-drive-ocamlfuse
-```
+1. There’s no official deb package for Debian. But we can easily compile it from source. First, install OPAM package manager.
+   ```sh
+   sudo apt install opam
+   ```
+2. Then install build dependencies.
+   ```sh
+   sudo apt install m4 libcurl4-gnutls-dev libfuse-dev libsqlite3-dev zlib1g-dev libncurses5-dev pkg-config
+   ```
+3. Initialize OPAM state.
+   ```sh
+   opam init
+   ```
+4. Update the list of available packages.
+   ```sh
+   opam update
+   ```
+5. Compile and install Google Drive Ocamlfuse.
+   ```sh
+   opam install google-drive-ocamlfuse
+   ```
 
 ## B. SETUP
 1. Create file */usr/bin/gdfuse* and copy these script into it:
