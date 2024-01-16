@@ -70,3 +70,8 @@
    ```sh
    sudo umount /mnt/gdrive
    ```
+
+
+## Refferences:
+1. https://medium.com/@enthu.cutlet/how-to-mount-google-drive-on-linux-windows-systems-5ef4bff24288
+2. https://www.linuxbabe.com/cloud-storage/install-google-drive-ocamlfuse-ubuntu-linux-mint
