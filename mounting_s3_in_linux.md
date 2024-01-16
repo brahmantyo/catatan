@@ -71,7 +71,7 @@ How to implement s3fs-fuse in Debian. We need prepare some informations and cred
 2. Create a file to save mounting instruction for auto mounting on reboot.
    ```sh
    sudo mkdir /mnt/S3-Nagoya
-   sudo echo 'the-nagoya /mnt/S3-Nagoya fuse.s3fs _netdev,allow_other,use_path_request_style,url=https://is3.cloudhost.id,use_cache=/root/cache 0 0' >> /etc/fstab
+   sudo su -c "echo 'the-nagoya /mnt/S3-Nagoya fuse.s3fs _netdev,allow_other,use_path_request_style,url=https://is3.cloudhost.id,use_cache=/root/cache 0 0' >> /etc/fstab"
    ```
 3. Manualy mount and umount
    ```sh
